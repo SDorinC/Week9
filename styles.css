@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#info-container {
+    height: 100%;
+    width: 40%;
+    overflow-y: auto;
+}
+
+#info-container > .episodeInfo:last-child {
+    margin-bottom: 0;
+}
+
+#character-container {
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    height: 100%;
+    width: 60%;
+    overflow-y: auto;
+}
+
+.episodeName::before {
+    content: "Episode Name: ";
+}
+
+.episodeNumber::before {
+    content: "Episode Number: ";
+}
+
+.episodeDate::before {
+    content: "Air Date: ";
+}
+
+.episodeName {
+    background-color: lightblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.episodeNumber {
+    background-color: lightblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.episodeDate {
+    background-color: darkseagreen;
+    font-size: 30px;
+    text-align: center;
+}
+
+.episodeCharacters {
+    background-color: darkseagreen;
+    font-size: 30px;
+    text-align: center;
+}
+
+.episodeInfo {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 300px;
+}
+
+figure > div {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
